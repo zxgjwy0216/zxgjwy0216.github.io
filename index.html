@@ -1,29 +1,44 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Hank Quinlan, Horrible Cop</title>
-        <link rel="stylesheet" type="text/css" href="/css/main.css">
-    </head>
-    <body>
-        <nav>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="/cv">CV</a></li>
-                <li><a href="/blog">Blog</a></li>
-            </ul>
-        </nav>
-        <div class="container">
-            <div class="blurb">
-                <h1>Hi there, I'm Hank Quinlan!</h1>
-                <p>I'm best known as the horrible cop from <em>A Touch of Evil</em> Don't trust me. <a href="/about">Read more about my life...</a></p>
-            </div><!-- /.blurb -->
-        </div><!-- /.container -->
-        <footer>
-            <ul>
-                <li><a href="mailto:hankquinlanhub@gmail.com">email</a></li>
-                <li><a href="https://github.com/hankquinlan">github.com/hankquinlan</a></li>
-            </ul>
-        </footer>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>贪吃蛇</title>
+    <link rel="stylesheet" href="贪吃蛇.css">
+</head>
+<body>
+<audio loop src="./img/zbjbxf.mp3">
+    <source >
+</audio>
+<div class ="all">
+    <div class="startPage" id="startPage">
+        <span>玩到10分可领取超级大红包！</span>
+        <div class="startBtn" id="startBtn">开始游戏</div>
+    </div>
+    <div class="wrapper">
+        <div class="left-side" id="startPaush">start</div>
+        <div class="main">
+            <div class="header">
+                <div class="snakescore" id="snakescore">
+                    分数:
+                    <span id="snakescore"></span>
+                </div>
+            </div>
+            <div class="content" id="content"></div>
+        </div>
+    </div>
+    <div class="snake-loser" id="snake-loser">
+            <div class="con">
+                <div class="snake-close" id="snake-close"></div>
+                <span class="snake-loserScore" id="snake-loserScore"></span>
+            </div>
+    </div>
+</div>
+<audio loop src="img/Jingle Bell.mp3">
+    <source >
+</audio>
+    <script src="./jquery.js"></script>
+    <script src="贪吃蛇.js"></script>
+</body>
 </html>
