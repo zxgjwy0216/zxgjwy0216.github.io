@@ -1,0 +1,319 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+html,body{
+    width:100%;
+    height:100%;
+    overflow: hidden;
+}
+.startPage{
+    width:100%;
+    z-index: 999;
+    height:820px;
+    position: absolute;
+    top:0px;
+    left:0px;
+   
+}
+.startPage span {
+    font-size:30px;
+    display: inline-block;
+    position: absolute;
+    top:50px;
+    left:50%;
+    color:red;
+    margin-left:-200px;
+}
+.startBtn{
+    height:100px;
+    width:250px;
+    cursor: pointer;
+    position: absolute;
+    top:0px;
+    right:0px;
+    bottom:0px;
+    left:0px;
+    margin:auto;
+    background-color: powderblue;
+    line-height: 100px;
+    text-align: center;
+    font-size:30px;
+    border-radius: 60%;
+    font-weight: bold;
+    opacity:0.9;
+    color: rgba(255, 255, 255, 0.952);
+    /* display: none; */
+}
+
+.wrapper{
+    width:100%;
+    height:800px;
+    position: absolute;
+    background-image:url('img/bg.jpg');
+    background-size:100% 100%;
+}
+
+.left-side{
+    position:absolute;
+    width:50px;;
+    height:50px;
+    line-height:50px;
+    font-size:20px;
+    background-color:greenyellow;
+    border-radius: 100%;
+    text-align: center;
+    top:20px;
+    left:20px;
+    cursor: pointer;
+    display:none;
+}
+
+.main{
+    position: absolute;
+    left:25%;
+    display:inline-block;
+    width:50%;
+    height:90%;
+}
+
+.header{
+   width:100%;
+   height:80px;
+   text-align:center;
+}
+
+.snakescore{
+    line-height:40px;
+    color:#ddd;
+    font-size:20px;
+    font-weight:bolder;
+}
+
+.snakescore span{
+    display:inline-block;
+    height:80px;
+    width:30px;
+    line-height:80px;
+}
+
+.content{
+    position:absolute;
+    width:79.5%;
+    height:36.5%;
+    left:10%;
+    top:34%;
+}
+
+.snake-loser{
+    display: none;
+    position: absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+}
+
+.snake-loser .con{
+    background-image: url('img/startP.jpg');
+    background-size:100% 100%;
+    height:300px;
+    width:400px;
+    position:absolute;
+    margin:auto;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+    border-radius:20px;
+}
+
+.snake-close{
+    position:absolute;
+    top:0;
+    right:0;
+    height:40px;
+    width:40px;
+    background-image: url('img/closeBtn.png');
+    background-size:100% 100%;
+    cursor: pointer;
+}
+.snake-loserScore{
+    display:block;
+    height:30px;
+    width:60px;
+    position:absolute;
+    top:42%;
+    left:40%;
+    color:#222;
+    font-size:30px;
+    font-weight:bolder;
+}
+
+.food{
+    background-image: url('img/shi.png');
+    background-size:100% 100%;
+    
+}
+.head{
+    background-image: url('img/xwy.jpg');
+    background-size:100% 100%;
+}
+.body{
+    background-image: url('img/shi.png');
+    background-size:100% 100%;
+    background-color:black;
+}
+
+.snowClose{
+    position:absolute;
+    top:0;
+    right:10px;
+    height:40px;
+    width:40px;
+    background-image: url('img/closeBtn.png');
+    background-size:100% 100%;
+    cursor: pointer;
+}
+/*---------------------------*/
+
+.snowWrapper{
+    position: relative;
+    width:100%;
+    height:100%;
+    background-color: #e74c3c;
+    background-image:url('img/bg.png');
+    background-repeat: repeat-x;
+    background-position: 100% 100%;
+}
+.box{
+    width: 300px;
+    height: 255px;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    margin-left: -150px;
+    z-index: 10;
+    cursor: pointer;
+ 
+    text-align: center;
+}
+.box .boxTop{
+    width:100%;
+    height:35%;
+    background-image: url('img/hegai.png');
+    background-size:100% 100%; 
+}
+.box .boxBottom{
+    display: inline-block;
+    width:90%;
+    height:65%;
+    background-image: url('img/hezi.png');
+    background-size:100% 100%; 
+    color:#fff;
+  
+}
+.shake.box {
+	animation: shake 0.5s linear infinite forwards;
+}
+.box.shake .boxTop{
+	animation: shake 0.5s 0.1s linear infinite forwards;
+}
+.fly .boxTop{
+    animation: flyUp 0.4s ease-out forwards;
+}
+.fly .boxBottom{
+	animation: fallDown 0.2s 0.05s ease-in forwards;
+}
+@keyframes flyUp {
+	75% { opacity: 1;}
+	100% { transform: translateY(-1000px) rotate(20deg); opacity: 0;}
+}
+@keyframes fallDown {
+	75% { opacity: 1;}
+	100% { transform: translateY(100%); opacity: 0;}
+}
+.bell{
+    border-radius: 20px;
+    position: absolute;
+    top:45%;
+    left:50%;
+    margin-top:-225px;
+    margin-left:-275px;
+    width:550px;
+    height:700px;
+    width:auto;
+    height:auto;
+    max-width:100%;
+    max-height:100%;
+    opacity: 0; 
+    background-size: 100%;
+}
+
+.bellImg{
+    border-radius:30px;
+}
+.show .bell{
+    opacity: 1;
+    transition:all 0.7s ease-in;
+}
+
+.merry{
+    position: absolute;
+    left:0;
+    top:5%;
+    width:100%;
+    height:100px;
+    text-align: center;
+}
+.christmas{
+    position: absolute;
+    width:100%;
+    height:100px;
+    left:0;
+    top:15%;
+    text-align: center;
+}
+.cen{
+    display:inline-block;
+}
+.cen span{
+    display:inline-block;
+    opacity: 0;
+    font-size:40px;
+    color:#2c3e50;
+    text-shadow: 5px 5px 0 #ca3121;
+    margin:10px;
+}
+
+.show .cen span{
+    opacity: 1;
+    transition:all 1s 0.5s ease-in;
+}
+
+.show .cen span{
+	animation: shake 0.5s 0s linear infinite forwards;
+}
+.show .cen span:nth-child(even){
+    animation-duration: 1s;
+}
+@keyframes shake {
+	25% { transform: rotate(4deg); }
+	75% { transform: rotate(-2deg); }
+}
+.snow {
+    position: fixed;
+    top: -50px;
+    animation: drop ease-in-out infinite;
+}
+@keyframes drop {
+    0% {
+        transform: translate(0px, -50px);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(0px, 750px);
+        opacity: 0.2;
+    }
+}
