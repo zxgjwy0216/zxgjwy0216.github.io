@@ -51,7 +51,7 @@ html,body{
     width:100%;
     height:800px;
     position: absolute;
-    background-image:url('img/bg.jpg');
+    background-image:url('../img/bg.jpg');
     background-size:100% 100%;
 }
 
@@ -116,7 +116,7 @@ html,body{
 }
 
 .snake-loser .con{
-    background-image: url('img/startP.jpg');
+    background-image: url('../img/startP.jpg');
     background-size:100% 100%;
     height:300px;
     width:400px;
@@ -135,7 +135,7 @@ html,body{
     right:0;
     height:40px;
     width:40px;
-    background-image: url('img/closeBtn.png');
+    background-image: url('../img/closeBtn.png');
     background-size:100% 100%;
     cursor: pointer;
 }
@@ -152,16 +152,16 @@ html,body{
 }
 
 .food{
-    background-image: url('img/shi.png');
+    background-image: url('../img/shi.png');
     background-size:100% 100%;
     
 }
 .head{
-    background-image: url('img/xwy.jpg');
+    background-image: url('../img/xwy.jpg');
     background-size:100% 100%;
 }
 .body{
-    background-image: url('img/shi.png');
+    background-image: url('../img/shi.png');
     background-size:100% 100%;
     background-color:black;
 }
@@ -172,7 +172,7 @@ html,body{
     right:10px;
     height:40px;
     width:40px;
-    background-image: url('img/closeBtn.png');
+    background-image: url('../img/closeBtn.png');
     background-size:100% 100%;
     cursor: pointer;
 }
@@ -183,7 +183,7 @@ html,body{
     width:100%;
     height:100%;
     background-color: #e74c3c;
-    background-image:url('img/bg.png');
+    background-image:url('../img/bg.png');
     background-repeat: repeat-x;
     background-position: 100% 100%;
 }
@@ -202,14 +202,14 @@ html,body{
 .box .boxTop{
     width:100%;
     height:35%;
-    background-image: url('img/hegai.png');
+    background-image: url('../img/hegai.png');
     background-size:100% 100%; 
 }
 .box .boxBottom{
     display: inline-block;
     width:90%;
     height:65%;
-    background-image: url('img/hezi.png');
+    background-image: url('../img/hezi.png');
     background-size:100% 100%; 
     color:#fff;
   
