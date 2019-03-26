@@ -80,13 +80,13 @@ aside {
 aside .avader {
     text-align: center;
     position: absolute;
-    top: -110px;
+    top: -50px;
     width: 100%;
 }
 
 aside .avader>img {
-    width: 220px;
-    height: 220px;
+    width: 150px;
+    height: 150px;
     background: cornflowerblue;
 }
 
